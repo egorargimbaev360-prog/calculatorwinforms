@@ -45,11 +45,13 @@
             button15 = new Button();
             button16 = new Button();
             textBox2 = new TextBox();
+            button17 = new Button();
+            button18 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(181, 300);
+            button1.Location = new Point(33, 159);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
@@ -58,7 +60,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(181, 271);
+            button2.Location = new Point(33, 130);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 1;
@@ -67,7 +69,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(181, 242);
+            button3.Location = new Point(33, 101);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 2;
@@ -76,7 +78,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(262, 300);
+            button4.Location = new Point(114, 159);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 3;
@@ -86,7 +88,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(262, 271);
+            button5.Location = new Point(114, 130);
             button5.Name = "button5";
             button5.Size = new Size(75, 23);
             button5.TabIndex = 4;
@@ -95,7 +97,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(262, 242);
+            button6.Location = new Point(114, 101);
             button6.Name = "button6";
             button6.Size = new Size(75, 23);
             button6.TabIndex = 5;
@@ -104,7 +106,7 @@
             // 
             // button7
             // 
-            button7.Location = new Point(343, 300);
+            button7.Location = new Point(195, 159);
             button7.Name = "button7";
             button7.Size = new Size(75, 23);
             button7.TabIndex = 6;
@@ -114,7 +116,7 @@
             // 
             // button8
             // 
-            button8.Location = new Point(343, 271);
+            button8.Location = new Point(195, 130);
             button8.Name = "button8";
             button8.Size = new Size(75, 23);
             button8.TabIndex = 7;
@@ -123,7 +125,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(343, 242);
+            button9.Location = new Point(195, 101);
             button9.Name = "button9";
             button9.Size = new Size(75, 23);
             button9.TabIndex = 8;
@@ -132,7 +134,7 @@
             // 
             // button10
             // 
-            button10.Location = new Point(181, 329);
+            button10.Location = new Point(33, 188);
             button10.Name = "button10";
             button10.Size = new Size(75, 23);
             button10.TabIndex = 9;
@@ -141,7 +143,7 @@
             // 
             // button11
             // 
-            button11.Location = new Point(262, 329);
+            button11.Location = new Point(114, 188);
             button11.Name = "button11";
             button11.Size = new Size(75, 23);
             button11.TabIndex = 10;
@@ -150,7 +152,7 @@
             // 
             // button12
             // 
-            button12.Location = new Point(343, 329);
+            button12.Location = new Point(195, 188);
             button12.Name = "button12";
             button12.Size = new Size(75, 23);
             button12.TabIndex = 11;
@@ -159,7 +161,7 @@
             // 
             // button13
             // 
-            button13.Location = new Point(446, 242);
+            button13.Location = new Point(276, 101);
             button13.Name = "button13";
             button13.Size = new Size(75, 23);
             button13.TabIndex = 12;
@@ -168,7 +170,7 @@
             // 
             // button14
             // 
-            button14.Location = new Point(446, 271);
+            button14.Location = new Point(276, 130);
             button14.Name = "button14";
             button14.Size = new Size(75, 23);
             button14.TabIndex = 13;
@@ -177,7 +179,7 @@
             // 
             // button15
             // 
-            button15.Location = new Point(446, 300);
+            button15.Location = new Point(276, 159);
             button15.Name = "button15";
             button15.Size = new Size(75, 23);
             button15.TabIndex = 14;
@@ -186,7 +188,7 @@
             // 
             // button16
             // 
-            button16.Location = new Point(446, 329);
+            button16.Location = new Point(276, 188);
             button16.Name = "button16";
             button16.Size = new Size(75, 23);
             button16.TabIndex = 15;
@@ -196,17 +198,37 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 20F);
-            textBox2.Location = new Point(184, 144);
+            textBox2.Location = new Point(33, 20);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(340, 43);
+            textBox2.Size = new Size(318, 43);
             textBox2.TabIndex = 17;
             textBox2.TextChanged += textBox2_TextChanged;
+            // 
+            // button17
+            // 
+            button17.Location = new Point(195, 72);
+            button17.Name = "button17";
+            button17.Size = new Size(156, 23);
+            button17.TabIndex = 18;
+            button17.Text = "С";
+            button17.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            button18.Location = new Point(33, 72);
+            button18.Name = "button18";
+            button18.Size = new Size(156, 23);
+            button18.TabIndex = 19;
+            button18.Text = "AC";
+            button18.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(385, 236);
+            Controls.Add(button18);
+            Controls.Add(button17);
             Controls.Add(textBox2);
             Controls.Add(button16);
             Controls.Add(button15);
@@ -249,5 +271,7 @@
         private Button button15;
         private Button button16;
         private TextBox textBox2;
+        private Button button17;
+        private Button button18;
     }
 }
