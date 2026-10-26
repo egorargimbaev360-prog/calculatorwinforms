@@ -154,9 +154,9 @@
             btndot.Name = "btndot";
             btndot.Size = new Size(75, 23);
             btndot.TabIndex = 10;
-            btndot.Text = ".";
+            btndot.Text = ",";
             btndot.UseVisualStyleBackColor = true;
-            btndot.Click += Btnnumbersactions;
+            btndot.Click += dotoperation;
             // 
             // btnequals
             // 
@@ -166,6 +166,7 @@
             btnequals.TabIndex = 11;
             btnequals.Text = "=";
             btnequals.UseVisualStyleBackColor = true;
+            btnequals.Click += btnequals_Click;
             // 
             // btndivide
             // 
@@ -175,7 +176,7 @@
             btndivide.TabIndex = 12;
             btndivide.Text = "/";
             btndivide.UseVisualStyleBackColor = true;
-            btndivide.Click += mathoperation;
+            btndivide.Click += dotoperation;
             // 
             // multiply
             // 
@@ -261,7 +262,6 @@
             Controls.Add(btn1);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
