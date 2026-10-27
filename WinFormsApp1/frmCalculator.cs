@@ -3,14 +3,14 @@ using System.Windows.Forms.Design;
 
 namespace WinFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class frmCalculator : Form
     {
         double Firstnum;
         double Secondnum;
         string operation = "";
         bool newOperation;
         double mathResult = 0;
-        public Form1()
+        public frmCalculator()
         {
             InitializeComponent();
         }
@@ -44,16 +44,47 @@ namespace WinFormsApp1
             var ope = (Button)sender;
             if (textBox2.Text == "")
                 return;
+
+            if (operation != "" && !newOperation)
+            {
+                Secondnum = double.Parse(textBox2.Text);
+
+                if (operation == "+")
+                {
+                    mathResult = Firstnum + Secondnum;
+                }
+
+                else if (operation == "-")
+                {
+                    mathResult = Firstnum - Secondnum;
+                }
+
+                else if (operation == "*")
+                {
+                    mathResult = Secondnum * Firstnum;
+                }
+
+                else if (operation == "/")
+                {
+                    mathResult = Firstnum / Secondnum;
+                }
+
+                textBox2.Text = mathResult.ToString();
+            }
+            
             Firstnum = double.Parse(textBox2.Text);
-
             operation = ope.Text;
-
             newOperation = true;
 
         }
 
         private void btnequals_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(textBox2.Text))
+            {
+                return;
+            }
+
             Secondnum = double.Parse(textBox2.Text);
 
             if (operation == "+")
@@ -79,6 +110,7 @@ namespace WinFormsApp1
                     MessageBox.Show("На ноль делить нельзя!");
                     return;
                 }
+                
             }
             textBox2.Text = mathResult.ToString();
         }
@@ -94,5 +126,14 @@ namespace WinFormsApp1
                 textBox2.Text += ",";
             }
         }
+        private void clearoperation(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            Firstnum = 0;
+            Secondnum = 0;
+            operation = "";
+            newOperation = true;
+        }
+
     }
 }
